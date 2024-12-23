@@ -5,6 +5,8 @@ import { customersData, customersGrid } from '../data/dummy';
 import { Header } from '../components';
 
 const Customers = () => {
+  const selectionsettings = { persistSelection: true };
+
   return (
     <div className='m-2 md:m-8 p-2 md:p-4 bg-white rounded-3xl'>
     <Header title='Customers' category="Page" />
@@ -12,7 +14,9 @@ const Customers = () => {
      dataSource={customersData}
      allowPaging
      allowSorting
+     pageSettings={{ pageCount: 5 }}
      toolbar={['Delete']}
+     selectionSettings={selectionsettings}
      editSettings={{allowDeleting:true, allowEditing:true }}
      width="auto"
     >
