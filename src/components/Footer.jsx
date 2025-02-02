@@ -16,9 +16,9 @@ const Footer = () => {
         <span style={{fontWeight:"bold", marginLeft:'4px', marginRight:'4px'}}> © </span>
         {year}
         <a
-          href="https://github.com/Ashu-tech07/sharpener-task/tree/main/mail-box-client"
+          href="https://ashish07-portfolio.netlify.app/"
           target="_blank"
-          title="Github Repository"
+          title="Ashish's portfolio"
         >
           <strong>
             Dashboard
